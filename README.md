@@ -28,7 +28,7 @@ from datasets import load_dataset
 dataset = load_dataset("wenhu/TheoremQA")
 ```
 
-## Running Instruction
+## Running Instruction (5-shot ICL)
 ```
 mkdir outputs
 python run.py --model [YOUR_MODEL_HF_LINK] --form short
