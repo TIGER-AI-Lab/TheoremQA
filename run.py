@@ -32,8 +32,8 @@ def run_question_answer(questions: list, groundtruths: list, form: str, shots: i
 
 
 if __name__ == "__main__":
-    stop_tokens = ["USER:", "ASSISTANT:",  "### Instruction:", "Response:", "<start_of_turn>", "[INST]", "Problem:"]
-    sampling_params = SamplingParams(temperature=0, top_p=1, max_tokens=1024, stop=stop_tokens)
+    stop_tokens = ["USER:", "ASSISTANT:",  "### Instruction:", "Response:", "<start_of_turn>", "[INST]", "\n\nProblem", "Problem:"]
+    sampling_params = SamplingParams(temperature=0, top_p=1, max_tokens=2048, stop=stop_tokens)
     llm = LLM(model=args.model, tensor_parallel_size=torch.cuda.device_count(), dtype='bfloat16', trust_remote_code=True)
 
     questions, groundtruths = data_loader.load_dataset()
