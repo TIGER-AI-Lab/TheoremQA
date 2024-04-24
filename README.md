@@ -1,6 +1,8 @@
 # TheoremQA
 The official repo for [TheoremQA: A Theorem-driven Question Answering dataset](https://arxiv.org/abs/2305.12524) (EMNLP 2023)
 
+The leaderboard is displayed in https://huggingface.co/spaces/TIGER-Lab/Science-Leaderboard
+
 ## Introduction
 We propose the first question-answering dataset driven by STEM theorems. We annotated 800 QA pairs covering 350+ theorems spanning across Math, EE&CS, Physics and Finance. The dataset is collected by human experts with very high quality. We provide the dataset as a new benchmark to test the limit of large language models to apply theorems to solve challenging university-level questions. We provide a pipeline in the following to prompt LLMs and evaluate their outputs with WolframAlpha.
 <p align="center">
